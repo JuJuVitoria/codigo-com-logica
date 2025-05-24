@@ -1,0 +1,10 @@
+@import url('./vendor/reset.css');
+@import url('./components/variables.css');
+@import url('./components/typography.css');
+@import url('./components/header.css');
+
+body {
+    background: linear-gradient(var(--gradiente));
+    height: 100vh;
+    color: var(--branco);
+}
