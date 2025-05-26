@@ -10,6 +10,15 @@
     padding: 2rem 0;
 }
 
+.subtitulo {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    padding: 2rem 0;
+}
+
 .texto__paragrafo {
     color: var(--branco);
     font-family: 'Inter';
