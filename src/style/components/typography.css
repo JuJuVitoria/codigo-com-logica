@@ -20,7 +20,6 @@
 }
 
 .texto__paragrafo {
-    color: var(--branco);
     font-family: 'Inter';
     font-size: 1.3rem;
     font-style: normal;
