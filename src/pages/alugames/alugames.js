@@ -1,13 +1,20 @@
 function alterarStatus(id) {
     const jogo = document.getElementById(`game-${id}`)
-    const capaJogo = jogo.querySelector("div");
-    const btn = jogo.querySelector("a");
+    const capaJogo = jogo.querySelector('[data-role="cover"]');
+    const btn = jogo.querySelector('[data-role="action-button"]');
 
-    if (!capaJogo.classList.contains("dashboard__item__img--rented")) {
-        capaJogo.classList.add("dashboard__item__img--rented");
-        btn.classList.add("dashboard__item__button--return");
+     const alugado = "dashboard__item__img--rented";
+    const devolver = "dashboard__item__button--return";
+
+    const estaAlugado = jogo.dataset.status === "rented";
+
+    if (!estaAlugado) {
+        capaJogo.classList.add(alugado);
+        btn.classList.add(devolver);
+        jogo.dataset.status = "rented";
     } else {
-        capaJogo.classList.remove("dashboard__item__img--rented");
-        btn.classList.remove("dashboard__item__button--return");
+        capaJogo.classList.remove(alugado);
+        btn.classList.remove(devolver);
+        jogo.dataset.status = "available";
     }
 } 
