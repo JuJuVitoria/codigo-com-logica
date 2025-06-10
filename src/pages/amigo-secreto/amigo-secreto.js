@@ -12,8 +12,8 @@ function adicionar() {
     }
 
     if (listaAmigos.includes(amigo)) {
-        alert('Este amigo já foi adicionado à lista!');
-        return;
+        alert('Esse nome já foi adicionado, por favor adicione outro.')
+        return
     }
 
     listaAmigos.push(amigo);
@@ -34,7 +34,7 @@ function reiniciar() {
 }
 
 function sortear() {
-    if (listaAmigos.length < 2) {
+    if (listaAmigos.length < 4) {
         alert('Adicione pelo menos dois amigos!');
         return;
     }
